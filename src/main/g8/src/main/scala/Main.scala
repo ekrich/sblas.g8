@@ -13,7 +13,7 @@ object Main {
     val yt    = (4, -2, -1)
 
     {
-      // Using data on the stack - use caution so they remain scope
+      // using data on the stack - use caution so they remain scope
       val X = stackalloc[CFloat](3)
       X(0) = xt._1
       X(1) = xt._2
@@ -24,17 +24,18 @@ object Main {
       Y(1) = yt._2
       Y(2) = yt._3
 
+      // avoid string substition for g8 template
       println("X = " + xt + "Y = " + yt)
       println("CFloat routines (single precision)")
 
       val res2 = cblas_sdot(N, X, incX, Y, incY)
-      println(s"""cblas_sdot: $res2""")
+      println("cblas_sdot: " + res2)
 
       val res = cblas_sdsdot(N, alpha, X, incX, Y, incY)
-      println(s"""cblas_sdsdot: $res alpha: $alpha""")
+      println("cblas_sdsdot: " + res + " alpha: " + alpha)
     }
 
-    // Using a Zone and data on the heap
+    // using a Zone and data on the heap
     Zone { implicit z =>
       val X = alloc[CDouble](3)
       X(0) = 1
@@ -49,7 +50,7 @@ object Main {
       println("CDouble routines (double precision)")
 
       val res3 = cblas_ddot(N, X, incX, Y, incY)
-      println(s"""cblas_ddot: $res3""")
+      println("cblas_ddot: " + res3)
 
     }
     println("Done.")
