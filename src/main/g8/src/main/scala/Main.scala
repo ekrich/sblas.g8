@@ -24,14 +24,14 @@ object Main {
       Y(1) = yt._2
       Y(2) = yt._3
 
-      println(s"X = $xt, Y = $yt")
+      println("X = " + xt + "Y = " + yt)
       println("CFloat routines (single precision)")
 
       val res2 = cblas_sdot(N, X, incX, Y, incY)
-      println(s"cblas_sdot: $res2")
+      println(s"""cblas_sdot: $res2""")
 
       val res = cblas_sdsdot(N, alpha, X, incX, Y, incY)
-      println(s"cblas_sdsdot: $res alpha: $alpha")
+      println(s"""cblas_sdsdot: $res alpha: $alpha""")
     }
 
     // Using a Zone and data on the heap
@@ -49,7 +49,7 @@ object Main {
       println("CDouble routines (double precision)")
 
       val res3 = cblas_ddot(N, X, incX, Y, incY)
-      println(s"cblas_ddot: $res3")
+      println(s"""cblas_ddot: $res3""")
 
     }
     println("Done.")
