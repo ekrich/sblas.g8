@@ -25,7 +25,7 @@ object Main {
       Y(2) = yt._3
 
       // avoid string substition for g8 template
-      println("X = " + xt + "Y = " + yt)
+      println("X = " + xt + " Y = " + yt)
       println("CFloat routines (single precision)")
 
       val res2 = cblas_sdot(N, X, incX, Y, incY)
