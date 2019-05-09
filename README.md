@@ -1,5 +1,7 @@
 This is a minimal [Giter8][g8] template for sblas - Scala Native BLAS (Basic Linear Algebra Subprograms)
 
+Please refer to the **sblas** [README](https://github.com/ekrich/sblas#sblas---scala-native-blas) first.
+
 ```
 $ sbt new ekrich/sblas.g8
 $ cd <directory entered after the prompt>
