@@ -1,5 +1,5 @@
-import scalanative.native._
-import org.ekrich.blas.snic.blas._
+import scalanative.unsafe._
+import org.ekrich.blas.unsafe.blas._
 
 object Main {
   def main(args: Array[String]): Unit = {
