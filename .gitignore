@@ -1,4 +1,10 @@
+# sbt
 target/
-*.iml
-bin/.coursier
-bin/.scalafmt*
+
+# Metals
+/.bloop/
+/.metals/
+/project/metals.sbt
+
+# IntelliJ
+.idea
