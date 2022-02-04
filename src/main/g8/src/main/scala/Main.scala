@@ -5,12 +5,12 @@ object Main {
   def main(args: Array[String]): Unit = {
     println("Starting blas test...")
 
-    val N     = 3
+    val N = 3
     val alpha = 2
-    val incX  = 1
-    val incY  = 1
-    val xt    = (1, 3, -5)
-    val yt    = (4, -2, -1)
+    val incX = 1
+    val incY = 1
+    val xt = (1, 3, -5)
+    val yt = (4, -2, -1)
 
     {
       // using data on the stack - use caution so they remain scope

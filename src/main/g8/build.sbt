@@ -1,6 +1,6 @@
-scalaVersion := "2.13.5"
+scalaVersion := "2.13.8"
 
-libraryDependencies += "org.ekrich" %%% "sblas" % "0.3.0"
+libraryDependencies += "org.ekrich" %%% "sblas" % "0.4.0"
 
 // Set to Info, Debug (Info is default)
 logLevel := Level.Info
