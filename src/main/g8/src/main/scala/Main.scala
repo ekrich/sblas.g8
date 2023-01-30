@@ -6,7 +6,7 @@ object Main {
     println("Starting blas test...")
 
     val N = 3
-    val alpha = 2
+    val alpha = 2.0f
     val incX = 1
     val incY = 1
     val xt = (1, 3, -5)

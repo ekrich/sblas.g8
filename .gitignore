@@ -1,5 +1,6 @@
 # sbt
 target/
+project/
 
 # Metals
 /.bloop/
@@ -7,4 +8,7 @@ target/
 /project/metals.sbt
 
 # IntelliJ
-.idea
+/.idea
+
+# VSCode
+/.vscode
