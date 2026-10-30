@@ -1,11 +1,10 @@
 # sbt
 target/
-project/
 
 # Metals
-/.bloop/
-/.metals/
-/project/metals.sbt
+.bloop/
+.metals/
+metals.sbt
 
 # IntelliJ
 /.idea

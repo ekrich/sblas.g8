@@ -36,7 +36,7 @@ object Main {
     }
 
     // using a Zone and data on the heap
-    Zone { implicit z =>
+    Zone {
       val X = alloc[CDouble](3)
       X(0) = 1
       X(1) = 3
