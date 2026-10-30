@@ -1,4 +1,4 @@
-scalaVersion := "3.9.0"
+ThisBuild / scalaVersion := "3.9.0"
 
 libraryDependencies += "org.ekrich" %% "sblas" % "0.8.0"
 
