@@ -10,7 +10,7 @@ $ sbt run
 
 License
 -------
-Copyright 2019-2026 by Eric Richardson
+Written in 2019-2026 by Eric K Richardson (ekrich)
 
 To the extent possible under law, the author(s) have dedicated all copyright and
 related and neighboring rights to this template to the public domain worldwide.
