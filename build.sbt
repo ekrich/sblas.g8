@@ -11,7 +11,6 @@ Test / test := {
   TestResult.Passed
 }
 
-// Widen scalafmt's reach to the g8 template sources, which otherwise
-// aren't picked up as sbt sources (and are never compiled from here).
-Compile / unmanagedSourceDirectories += baseDirectory.value / "src" / "main" / "g8"
-Compile / unmanagedSources / includeFilter := ("*.scala" | "*.sbt")
+// Reach the g8 template sources too, not just sbt's Compile/Test dirs.
+addCommandAlias("scalafmtAll", "scalafmtRepo")
+addCommandAlias("scalafmtCheckAll", "scalafmtCheckRepo")
